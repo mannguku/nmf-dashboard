@@ -1,17 +1,13 @@
-import {SidebarComponent} from '@syncfusion/ej2-react-navigations'
-import {useState} from 'react'
+
+import MainSidebar from './mainSidebar'
+import AppBar from './appBar'
 const Dashboard= (props)=>{
-    const [open , setOpen]=useState(false)
-    const handleOpen =()=>{
-        setOpen(()=>!open)
-    }
     return(
         <div>
             <div className='wrapper'>
-                <SidebarComponent id='main-nav' style={{visibility:'visible'}}>
-                    <div>welcome</div>
-                </SidebarComponent>
-                <div>
+                <MainSidebar/>
+                <div className=''>
+                    <AppBar/>
                     {props.children}
                 </div>
             </div>
