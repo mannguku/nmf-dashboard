@@ -1,11 +1,14 @@
 import type { NextPage } from 'next'
-
+import Dashboard from '../components/layout/dashboard'
 
 const Home: NextPage = () => {
-  return (
-    <div >
-			app
-    </div>
+  
+  return(
+    <Dashboard>
+      <div>
+        main content
+      </div>
+    </Dashboard>
   )
 }
 

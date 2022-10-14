@@ -1,10 +1,9 @@
 
-
   steps:
-  - name: Install node modules
-run: npm install
+    - name: Install node modules
+      run: npm install
 
-  - name: Activate Syncfusion License
-run: npx syncfusion-license activate
-env:
-  SYNCFUSION_LICENSE: ${{ secrets.SYNCFUSION_LICENSE }}
+    - name: Activate Syncfusion License
+      run: npx syncfusion-license activate
+      env:
+        SYNCFUSION_LICENSE: ${{ secrets.SYNCFUSION_LICENSE }}
