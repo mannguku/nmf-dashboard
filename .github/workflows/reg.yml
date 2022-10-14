@@ -1,3 +1,0 @@
-
-    env:
-      SYNCFUSION_LICENSE: ${{ secrets.SYNCFUSION_LICENSE }}
